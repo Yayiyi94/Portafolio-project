@@ -1,3 +1,23 @@
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
 body {
   background-color: #1e1e1e;
 }
@@ -14,20 +34,72 @@ body {
   font-style: normal;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Antic", sans-serif;
-  font-weight: 800;
+  font-weight: 400;
   font-style: normal;
   color: #c07ceb;
+}
+
+h1 {
+  font-size: 64px;
 }
 
 p {
   font-family: "Anonymous Pro", monospace;
   font-weight: 400;
   font-style: normal;
+  font-size: 36px;
   color: #c4bfc9;
 }
 
 i {
   color: #c07ceb;
+}
+
+.hero {
+  text-align: center;
+  margin: 30px;
+}
+
+.btn-branding {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 26px;
+  background: #2c2c2c;
+  border-radius: 50%;
+  padding: 30px;
+  color: #c4bfc9;
+}
+
+.container {
+  max-width: 970px;
+}
+
+.row {
+  --bs-gutter-x: 10rem; /* ancho horizontal */
+}
+
+.row p {
+  font-size: 16px;
+}
+
+.card {
+  border: none;
+  background: #845a9f;
+}
+
+.card-title {
+  font-family: "Antic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #c07ceb;
+  padding: 10px;
+  font-size: 30px;
 }
