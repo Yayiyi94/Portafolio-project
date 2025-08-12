@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #d69bfa;
+  --secondary-color: #845a9f;
+  --text-color: #c4bfc9;
+  --buttons-color: #2c2c2c;
+  --primary-font-family: "Antic", sans-serif;
+  --secondary-font-family: "Anonymous Pro", monospace;
+}
+
 @media (max-width: 576px) {
   h1 {
     font-size: 48px;
@@ -18,20 +27,12 @@
   }
 }
 
+.bg-body-navbar {
+  background-color: var(--secondary-color);
+}
+
 body {
   background-color: #1e1e1e;
-}
-
-.antic-regular {
-  font-family: "Antic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.anonymous-pro-regular {
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 400;
-  font-style: normal;
 }
 
 h1,
@@ -42,7 +43,7 @@ h5 {
   font-family: "Antic", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #c07ceb;
+  color: var(--primary-color);
 }
 
 h1 {
@@ -53,12 +54,14 @@ p {
   font-family: "Anonymous Pro", monospace;
   font-weight: 400;
   font-style: normal;
-  font-size: 36px;
+  font-size: 30px;
   color: #c4bfc9;
 }
 
 i {
-  color: #c07ceb;
+  color: var(--primary-color);
+  font-size: 27px;
+  margin: 15px 20px;
 }
 
 .hero {
@@ -72,18 +75,22 @@ i {
   font-style: normal;
   text-align: center;
   font-size: 26px;
-  background: #2c2c2c;
   border-radius: 50%;
   padding: 30px;
   color: #c4bfc9;
 }
 
+.btn-background-color {
+  background-color: var(--buttons-color);
+}
+
 .container {
   max-width: 970px;
+  padding: 60px 20px;
 }
 
 .row {
-  --bs-gutter-x: 10rem; /* ancho horizontal */
+  --bs-gutter-x: 10rem;
 }
 
 .row p {
@@ -92,14 +99,37 @@ i {
 
 .card {
   border: none;
-  background: #845a9f;
+  background: var(--secondary-color);
 }
 
 .card-title {
   font-family: "Antic", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #c07ceb;
+  color: var(--primary-color);
   padding: 10px;
   font-size: 30px;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a:hover {
+  color: var(--buttons-color);
+  transition: color 0.2s ease;
+}
+
+i:hover {
+  color: var(--buttons-color);
+  transition: color 0.3s ease-in-out;
 }
