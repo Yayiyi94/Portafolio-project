@@ -29,6 +29,15 @@
   img {
     max-width: 100%;
   }
+
+  .container {
+    text-align: center;
+    padding: 80px 0;
+  }
+
+  .portrait {
+    display: none;
+  }
 }
 
 .bg-body-navbar {
@@ -48,6 +57,7 @@ h5 {
   font-weight: 400;
   font-style: normal;
   color: var(--primary-color);
+  text-align: center;
 }
 
 h1 {
@@ -136,4 +146,9 @@ a:hover {
 i:hover {
   color: var(--buttons-color);
   transition: color 0.3s ease-in-out;
+}
+
+.portrait {
+  border-radius: 15px;
+  width: 100%;
 }
