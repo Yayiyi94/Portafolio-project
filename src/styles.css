@@ -152,3 +152,7 @@ i:hover {
   border-radius: 15px;
   width: 100%;
 }
+
+body .dark-mode {
+  background-color: #cecece;
+}
