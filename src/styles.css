@@ -141,6 +141,11 @@ a {
   font-size: 25px;
 }
 
+.github-repository {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
 a:hover {
   color: var(--buttons-color);
   transition: color 0.2s ease;
