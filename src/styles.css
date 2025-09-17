@@ -1,8 +1,9 @@
 :root {
-  --primary-color: #d69bfa;
-  --secondary-color: #845a9f;
-  --text-color: #c4bfc9;
-  --buttons-color: #2c2c2c;
+  --primary-color: #8cb0e6;
+  --secondary-color: #648db3;
+  --background-color: #52357b;
+  --text-color: #b2d8ce;
+  --buttons-color: #524aa6;
   --primary-font-family: "Antic", sans-serif;
   --secondary-font-family: "Anonymous Pro", monospace;
 }
@@ -45,23 +46,21 @@
 }
 
 body {
-  background-color: #1e1e1e;
+  background-color: var(--background-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1 {
   font-family: "Antic", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: var(--primary-color);
   text-align: center;
+  font-size: 64px;
+  text-shadow: 1px 12px 10px rgba(140, 176, 230, 0.3);
 }
 
-h1 {
-  font-size: 64px;
+h2 {
+  color: var(--text-color);
 }
 
 p {
@@ -69,7 +68,7 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
-  color: #c4bfc9;
+  color: var(--text-color);
 }
 
 i {
@@ -80,7 +79,8 @@ i {
 
 .hero {
   text-align: center;
-  margin: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
 }
 
 .btn-branding {
@@ -91,16 +91,17 @@ i {
   font-size: 26px;
   border-radius: 50%;
   padding: 30px;
-  color: #c4bfc9;
+  color: var(--secondary-color);
 }
 
 .btn-background-color {
   background-color: var(--buttons-color);
+  color: var(--secondary-color);
 }
 
 .container {
-  max-width: 970px;
-  padding: 60px 20px;
+  max-width: 1080px;
+  padding: 20px 40px;
 }
 
 .row {
@@ -114,24 +115,21 @@ i {
 .card {
   border: none;
   background: var(--secondary-color);
+  padding: 15px;
 }
 
 .card-title {
   font-family: "Antic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--primary-color);
-  padding: 10px;
+  color: var(--secondary-color);
+  padding: 15px;
+  font-weight: 800;
   font-size: 30px;
-}
-
-i .card-text {
 }
 
 footer {
   background-color: var(--secondary-color);
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 20px;
 }
 
@@ -163,4 +161,17 @@ footer i:hover {
 
 body .dark-mode {
   background-color: #cecece;
+}
+
+#second-one {
+  display: none;
+}
+
+#images-change:hover #first-one {
+  display: none;
+}
+
+#images-change:hover #second-one {
+  display: block;
+  transition: color 0.3s ease-in-out;
 }
