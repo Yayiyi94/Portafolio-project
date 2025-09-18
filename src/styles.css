@@ -163,6 +163,11 @@ body .dark-mode {
   background-color: #cecece;
 }
 
+.avatar-image {
+  width: 260px;
+  border: 12px outset #200c3d;
+}
+
 #second-one {
   display: none;
 }
@@ -173,5 +178,6 @@ body .dark-mode {
 
 #images-change:hover #second-one {
   display: block;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.2s ease;
+  scale: 90%;
 }
