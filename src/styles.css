@@ -46,7 +46,14 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background: radial-gradient(
+    #492d70 32%,
+    transparent 21%,
+    transparent 85%,
+    #492d70 30%
+  );
+  background-size: 3em 3em;
+  background-color: #52357b;
 }
 
 h1 {
@@ -164,12 +171,21 @@ body .dark-mode {
 }
 
 .avatar-image {
-  width: 260px;
-  border: 12px outset #200c3d;
+  width: 360px;
+}
+
+#first-one {
+  border: 12px outset #8cb0e6;
+  border-radius: 37px;
+  animation: bounceBack 0.3s ease forwards;
 }
 
 #second-one {
   display: none;
+  border: 12px outset #b2d8ce;
+  border-radius: 37px;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 #images-change:hover #first-one {
@@ -178,6 +194,18 @@ body .dark-mode {
 
 #images-change:hover #second-one {
   display: block;
-  transition: color 0.2s ease;
-  scale: 90%;
+  transform: scale(1.1); /* La imagen crece */
+  animation: bounceBack 0.3s ease forwards;
+}
+
+@keyframes bounceBack {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
