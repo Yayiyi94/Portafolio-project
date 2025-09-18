@@ -41,8 +41,11 @@
   }
 }
 
-.bg-body-navbar {
-  background-color: var(--secondary-color);
+.navbar {
+  background: var(--secondary-color);
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
 body {
@@ -78,27 +81,10 @@ p {
   color: var(--text-color);
 }
 
-i {
-  color: var(--primary-color);
-  font-size: 27px;
-  margin: 15px 20px;
-}
-
 .hero {
   text-align: center;
   margin-bottom: 30px;
   padding: 20px;
-}
-
-.btn-branding {
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  font-size: 26px;
-  border-radius: 50%;
-  padding: 30px;
-  color: var(--secondary-color);
 }
 
 .btn-background-color {
@@ -106,9 +92,14 @@ i {
   color: var(--secondary-color);
 }
 
+.btn-margin {
+  margin: 30px;
+}
+
 .container {
-  max-width: 1080px;
-  padding: 20px 40px;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .row {
@@ -119,24 +110,22 @@ i {
   font-size: 16px;
 }
 
-.card {
-  border: none;
-  background: var(--secondary-color);
-  padding: 15px;
-}
-
 .card-title {
   font-family: "Antic", sans-serif;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 15px;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 35px;
+}
+
+.card-text {
+  font-size: 18px;
 }
 
 footer {
   background-color: var(--secondary-color);
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
   padding: 20px;
 }
 
@@ -163,7 +152,22 @@ footer i:hover {
 
 .portrait {
   border-radius: 15px;
-  width: 100%;
+  border: 12px outset #8cb0e6;
+  width: 90%;
+}
+
+.img-cards {
+  max-width: 80%;
+  border: 12px double #8cb0e6;
+  border-radius: 15px;
+}
+
+.card,
+.cards-container {
+  background-color: var(--secondary-color);
+  padding: 20px 5px;
+  margin-bottom: 30px;
+  border-radius: 15px;
 }
 
 body .dark-mode {
@@ -208,4 +212,30 @@ body .dark-mode {
   100% {
     transform: scale(1);
   }
+}
+
+.dark {
+  background: linear-gradient(
+    180deg,
+    rgba(73, 51, 97, 1) 0%,
+    rgba(33, 15, 55, 1) 100%
+  );
+}
+
+.dark a {
+  color: #dca06d;
+}
+.dark footer {
+  color: #a55b4b;
+}
+
+.dark .theme-toggle {
+  background: #4f1c51;
+  color: #a55b4b;
+  border: none;
+}
+
+.dark .theme-toggle:hover {
+  background: #f0f1c5;
+  color: #bf9264;
 }

@@ -34,7 +34,9 @@
     <link rel="stylesheet" href="/src/styles.css" />
     <link rel="icon" href="/images/Iconbar.svg" type="image/svg" />
   </head>
+
   <body>
+    <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg bg-body-navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="/index.html"
@@ -72,87 +74,93 @@
             <li class="nav-item">
               <a class="nav-link" href="/index.html#contact">Contact me</a>
             </li>
+            <li class="nav-item">
+              <button
+                id="themeToggle"
+                class="btn btn-outline-secondary btn-sm ms-3 theme-toggle"
+              >
+                🌙
+              </button>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="hero container">
-      <a
-        href="/about.html"
-        class="avatar-image btn btn-branding"
-        title="Go to Yadira´s About page"
-        id="images-change"
-        ><img
-          src="/images/myicon-1-bg.svg"
-          alt="Avatar of Yadira"
-          id="first-one" />
-        <img
-          src="/images/myicon-2-bg.svg"
-          alt="Avatar of Yadira"
-          id="second-one"
-      /></a>
-      <div class="row align-items-center">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <h1>Yadira De La Torre Ruiz</h1>
-        </div>
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <h2 class="text-center">
-            An 3D Animator and an Aspiring developer🌟
-          </h2>
-        </div>
+    <!--NAVBAR-->
+
+    <header class="hero container">
+      <div class="welcome-avatar">
+        <a
+          href="/about.html"
+          class="avatar-image btn"
+          title="Go to Yadira´s About page"
+          id="images-change"
+          ><img
+            src="/images/myicon-1-bg.svg"
+            alt="Avatar of Yadira"
+            id="first-one" />
+          <img
+            src="/images/myicon-2-bg.svg"
+            alt="Avatar of Yadira two"
+            id="second-one"
+        /></a>
+        <h1 class="fw-bold">I´m Yadira</h1>
+        <p class="lead">An 3D Animator and an Aspiring developer</p>
       </div>
-    </div>
-    <div class="container">
-      <div class="row text-center g-5">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <h5 class="card-title">3D ARTIST PROJECTS</h5>
+    </header>
 
-          <div class="card">
-            <img
-              src="/images/animation-image.png"
-              class="card-img-top"
-              alt="Image of a character with animation controls"
-            />
-
-            <div class="card-body">
-              <p class="card-text">
-                All the projects in which I have worked as a 3D animator,
-                including the personal ones.
-              </p>
-              <a
-                href="/3dportafolio.html"
-                class="btn btn-secondary btn-background-color"
-                title="Go to Yadira´s 3D Portafolio page"
-                >Go to portafolio</a
-              >
+    <!--Projects-->
+    <main>
+      <div class="container">
+        <div class="row text-center g-5">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <h5 class="card-title">3D ARTIST PROJECTS</h5>
+            <div class="card">
+              <img
+                src="/images/animation-image.png"
+                class="card-img-top"
+                alt="Image of a character with animation controls"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  All the projects in which I have worked as a 3D animator,
+                  including the personal ones.
+                </p>
+                <a
+                  href="/3dportafolio.html"
+                  class="btn btn-secondary btn-background-color"
+                  title="Go to Yadira´s 3D Portafolio page"
+                  >Go to portafolio</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <h5 class="card-title">DEVELOPER PROJECTS</h5>
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <h5 class="card-title">DEVELOPER PROJECTS</h5>
 
-          <div class="card">
-            <img
-              src="/images/image-programming.png"
-              class="card-img-top"
-              alt="Image of a screen with lines of code."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                The projects that I have worked in the "Shecodes" workshops.
-                Front-end, Back-end.
-              </p>
-              <a
-                href="/developerportafolio.html"
-                class="btn btn-secondary btn-background-color"
-                title="Go to Yadira´s Developer Portafolio page"
-                >Go to portafolio</a
-              >
+            <div class="card">
+              <img
+                src="/images/image-programming.png"
+                class="card-img-top"
+                alt="Image of a screen with lines of code."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  The projects that I have worked in the "Shecodes" workshops.
+                  Front-end, Back-end.
+                </p>
+                <a
+                  href="/developerportafolio.html"
+                  class="btn btn-secondary btn-background-color"
+                  title="Go to Yadira´s Developer Portafolio page"
+                  >Go to portafolio</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
     <footer id="contact">
       <h2>If you are interested, lets get in touch!</h2>
       <a
@@ -186,7 +194,7 @@
         ><i class="fa-brands fa-square-x-twitter"></i
       ></a>
       <h5>
-        This website was coded by Yadira De la Torre Ruiz, and is
+        This website was coded with ❤️ by Yadira De la Torre Ruiz, and is
         <a
           class="github-repository"
           href="https://github.com/Yayiyi94/Portafolio-project"
@@ -197,5 +205,16 @@
         </a>
       </h5>
     </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark");
+      }
+
+      let themeButton = document.querySelector(".theme-toggle");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
