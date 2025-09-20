@@ -9,7 +9,7 @@
         name="description"
         content="Portafolio with Yadira de la Torre Ruiz developer works, with a small description of them."
       />
-      <title>DeveloperPortafolio-YDLTR</title>
+      <title>DeveloperPortfolio-YDLTR</title>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
@@ -36,11 +36,12 @@
     </head>
 
     <body>
+      <!--NAVBAR-->
       <nav class="navbar navbar-expand-lg bg-body-navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="/index.html"
-            ><i class="fa-solid fa-paw"></i
-          ></a>
+            ><img src="/images/Iconbar.svg" alt="icon" width="35"
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -55,10 +56,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
+                <a class="nav-link" aria-current="page" href="/index.html"
                   >HomePage</a
                 >
               </li>
@@ -66,11 +64,11 @@
                 <a class="nav-link" href="/about.html">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/3dportafolio.html">3D Portafolio</a>
+                <a class="nav-link" href="/3dportafolio.html">3D Portfolio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/developerportafolio.html"
-                  >Developer Portafolio</a
+                  >Developer Portfolio</a
                 >
               </li>
               <li class="nav-item">
@@ -78,25 +76,35 @@
                   >Contact me</a
                 >
               </li>
+              <li class="nav-item">
+                <a
+                  href="https://drive.google.com/file/d/1OtXKIwWpf-fJ_heHxb4EGJYmXpz34tkz/view?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-background-color"
+                  title="A link to my cv"
+                  >My resume</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </nav>
+      <!--NAVBAR-->
 
       <div class="hero">
-        <h1>Developer Portafolio</h1>
+        <h1>Developer Portfolio</h1>
         <div class="container">
-          <div class="row btn-background-color p-2 mb-5 rounded">
-            <div class="col d-none d-lg-block">
+          <div class="row align-items-center cards-container">
+            <div class="col-6 d-none d-lg-block">
               <img
                 src="/images/lads-image.png"
-                class="portrait img-fluid"
+                class="img-fluid img-cards"
                 alt="Image of the webpage"
               />
             </div>
             <div class="col">
               <div class="project-description">
-                <h5 class="card-title">LADS Fan club: Front-End</h5>
+                <h2 class="card-title">LADS Fan club: Front-End</h2>
                 <p class="card-text">
                   This is my first project being a programmer, it is an
                   application simulating a fanclub of the Love and Deespace
@@ -117,17 +125,18 @@
               </div>
             </div>
           </div>
-          <div class="row btn-background-color p-2 mb-5 rounded">
-            <div class="col d-none d-lg-block">
+
+          <div class="row align-items-center cards-container">
+            <div class="col-6 d-none d-lg-block">
               <img
                 src="/images/weather-image.png"
-                class="portrait img-fluid"
+                class="img-fluid img-cards"
                 alt="Image of the webpage"
               />
             </div>
             <div class="col">
-              <div class="project-desciption">
-                <h5 class="card-title">Weather: Front-End</h5>
+              <div class="project-description">
+                <h2 class="card-title">Weather: Front-End</h2>
                 <p class="card-text">
                   An application of the weather with real data, also shows the
                   day and time of different countries in different areas of
@@ -148,17 +157,18 @@
               </div>
             </div>
           </div>
-          <div class="row btn-background-color p-2 mb-5 rounded">
-            <div class="col d-none d-lg-block">
+
+          <div class="row align-items-center cards-container">
+            <div class="col-6 d-none d-lg-block">
               <img
                 src="/images/gothicpoem-image.png"
-                class="portrait img-fluid"
+                class="img-fluid img-cards"
                 alt="Image of the webpage"
               />
             </div>
             <div class="col">
               <div class="project-description">
-                <h5 class="card-title">Poem AI Generator: Front-End</h5>
+                <h2 class="card-title">Poem AI Generator: Front-End</h2>
                 <p class="card-text">
                   With this application you can generate poems with Gothic style
                   by introducing the topic to be made and how many lines are
@@ -180,17 +190,18 @@
               </div>
             </div>
           </div>
-          <div class="row btn-background-color p-2 mb-5 rounded">
-            <div class="col d-none d-lg-block">
+
+          <div class="row align-items-center cards-container">
+            <div class="col-6 d-none d-lg-block">
               <img
                 src="/images/worldclock-image.png"
-                class="portrait img-fluid"
+                class="img-fluid img-cards"
                 alt="Image of the webpage"
               />
             </div>
             <div class="col">
-              <div class="project-desciption">
-                <h5 class="card-title">World Clock: Front-End</h5>
+              <div class="project-description">
+                <h2 class="card-title">World Clock: Front-End</h2>
                 <p class="card-text">
                   This application has the function of showing the current time
                   of certain cities of the world, in addition to the local
@@ -212,17 +223,18 @@
               </div>
             </div>
           </div>
-          <div class="row btn-background-color p-2 mb-5 rounded">
-            <div class="col d-none d-lg-block">
+
+          <div class="row align-items-center cards-container">
+            <div class="col-6 d-none d-lg-block">
               <img
                 src="/images/plantravel-pythonAI.png"
-                class="portrait img-fluid"
+                class="img-fluid img-cards"
                 alt="Image of the webpage"
               />
             </div>
             <div class="col">
               <div class="project-description">
-                <h5 class="card-title">Python AI Travel Planner: Back-end</h5>
+                <h2 class="card-title">Python AI Travel Planner: Back-end</h2>
                 <p class="card-text">
                   This Python code is a mini-assistent travel on the console
                   that APIS consults in real time to show the weather and
@@ -242,17 +254,18 @@
               </div>
             </div>
           </div>
-          <div class="row btn-background-color p-2 mb-5 rounded">
-            <div class="col d-none d-lg-block">
+
+          <div class="row align-items-center cards-container">
+            <div class="col-6 d-none d-lg-block">
               <img
                 src="/images/pythongrafics-image.png"
-                class="portrait img-fluid"
+                class="img-fluid img-cards"
                 alt="Image of the webpage"
               />
             </div>
             <div class="col">
-              <div class="project-desciption">
-                <h5 class="card-title">Python Data Manipulation: Back-end</h5>
+              <div class="project-description">
+                <h2 class="card-title">Python Data Manipulation: Back-end</h2>
                 <p class="card-text">
                   This code reads a CSV file with three columns (Continent,
                   Year, Population), groups the data by continent in a
@@ -273,27 +286,27 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="d-grid gap-2 d-md-flex justify-content-md-evenly">
-          <a
-            href="/3dportafolio.html"
-            class="btn btn-secondary btn-background-color"
-            title="Go to Yadira´s 3D Portafolio page"
-            >Go to 3D Portafolio</a
-          >
-          <a
-            href="/index.html"
-            class="btn btn-secondary btn-background-color"
-            title="Go to Home page"
-            >Back to Homepage</a
-          >
-          <a
-            href="/developerportafolio.html"
-            class="btn btn-secondary btn-background-color"
-            title="Go to Yadira´s Developer Portafolio page"
-            >Go to Developer Portafolio</a
-          >
+          <div class="d-grid gap-2 d-md-flex justify-content-md-evenly">
+            <a
+              href="/3dportafolio.html"
+              class="btn btn-secondary btn-background-color"
+              title="Go to Yadira´s 3D Portafolio page"
+              >Go to 3D Portfolio</a
+            >
+            <a
+              href="/index.html"
+              class="btn btn-secondary btn-background-color"
+              title="Go to Home page"
+              >Back to Homepage</a
+            >
+            <a
+              href="/developerportafolio.html"
+              class="btn btn-secondary btn-background-color"
+              title="Go to Yadira´s Developer Portafolio page"
+              >Go to Developer Portfolio</a
+            >
+          </div>
         </div>
       </div>
       <footer id="contact">

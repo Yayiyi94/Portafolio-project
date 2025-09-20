@@ -48,6 +48,10 @@
   z-index: 100;
 }
 
+.nav-link {
+  color: white;
+}
+
 body {
   background: radial-gradient(
     #492d70 32%,
@@ -90,6 +94,17 @@ p {
 .btn-background-color {
   background-color: var(--buttons-color);
   color: var(--secondary-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.btn-background-color:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  transform: scale(1.1);
+}
+
+.btn-navbar {
+  background-color: #ffff;
 }
 
 .btn-margin {
@@ -176,6 +191,11 @@ body .dark-mode {
 
 .avatar-image {
   width: 360px;
+}
+
+i {
+  font-size: 35px;
+  margin: 10px;
 }
 
 #first-one {
